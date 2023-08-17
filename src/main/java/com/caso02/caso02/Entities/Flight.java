@@ -4,6 +4,7 @@
  */
 package com.caso02.caso02.Entities;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,16 +18,17 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name="Vuelos")
-public class Flight {
+public class Flight { //Creacion de la entidad vuelo
     
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String numero_vuelo;
     private String destino;
+    private String lugar_salida;
     private String hora_salida;
     private String fecha_salida;
     private String fecha_llegada;
     private String modelo_avion;
-    
 }

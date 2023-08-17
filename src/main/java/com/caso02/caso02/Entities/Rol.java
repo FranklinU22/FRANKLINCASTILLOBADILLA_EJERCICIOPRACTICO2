@@ -4,7 +4,6 @@
  */
 package com.caso02.caso02.Entities;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,7 +16,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name="Roles")
-public class Rol implements Serializable{
+public class Rol implements Serializable{ //Creacion de la entidad Rol
     
     private static final long serial = 1L;
     
